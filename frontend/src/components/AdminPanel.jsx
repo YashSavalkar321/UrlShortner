@@ -128,7 +128,7 @@ const AdminPanel = ({ urls, onRefresh }) => {
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
                         <a
-                          href={`http://localhost:5000/${url.shortCode}`}
+                          href={`${import.meta.env.VITE_BASE_URL}/${url.shortCode}`}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-blue-600 hover:text-blue-900 transition-colors duration-200"

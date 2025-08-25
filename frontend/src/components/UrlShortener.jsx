@@ -33,7 +33,7 @@ const UrlShortener = ({ onUrlAdded }) => {
     setError('');
 
     try {
-      const response = await fetch('/api/shorten', {
+      const response = await fetch(`${import.meta.env.VITE_BASE_URL}/api/shorten`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

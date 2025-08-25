@@ -6,7 +6,7 @@ const AdminPanel = ({ urls, onRefresh }) => {
 
   const fetchStats = async () => {
     try {
-      const response = await fetch('/api/stats');
+      const response = await fetch(`${import.meta.env.VITE_BASE_URL}/api/stats`);
       const data = await response.json();
       setStats(data);
     } catch (error) {

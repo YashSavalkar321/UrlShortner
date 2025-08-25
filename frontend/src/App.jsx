@@ -9,7 +9,7 @@ function App() {
 
   const fetchUrls = async () => {
     try {
-      const response = await fetch('/api/urls');
+      const response = await fetch(`${import.meta.env.VITE_BASE_URL}/api/urls`);
       const data = await response.json();
       setUrls(data);
     } catch (error) {

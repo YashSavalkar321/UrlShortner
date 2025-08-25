@@ -89,7 +89,7 @@ MONGODB_URI=mongodb://localhost:27017/urlshortener
 PORT=5000
 
 # For MongoDB Atlas:
-# MONGODB_URI=mongodb+srv://username:password@cluster0.xxxxx.mongodb.net/urlshortener?retryWrites=true&w=majority
+# MONGODB_URI=
 ```
 
 ## API Endpoints

@@ -130,7 +130,7 @@ app.get('/api/stats', async (req, res) => {
 });
 
 // Example route
-app.get("/test", (req, res) => {
+app.get("/", (req, res) => {
   res.json({ msg: "Backend is working!" });
 });
 

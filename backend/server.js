@@ -55,7 +55,7 @@ app.post('/api/shorten', async (req, res) => {
     if (existingUrl) {
       return res.json({
         originalUrl: existingUrl.originalUrl,
-        shortUrl: `http://localhost:5000/${existingUrl.shortCode}`,
+        shortUrl: `${process.env.BASE_URL}${existingUrl.shortCode}`,
         shortCode: existingUrl.shortCode
       });
     }
